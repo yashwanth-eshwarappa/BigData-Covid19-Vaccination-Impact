@@ -51,7 +51,8 @@ Alameda
 -0.8615849204262467
 
 
-In the county of ALAMEDA across various age groups we can clearly see trends across various age groups of 0-17,18-49 and 50-64 respectively.
+Example:
+In the county of ALAMEDA across various age groups we can clearly see trends across various age groups of 0-17 and 18-49 respectively.
 ![N6aBID1W8zq1i_9bG8COQW4gfmmoAIwSNimVlBp2lABXPH1Z4nzeyr5--jyTXRnTIXpOVOyRn-XAuJov5mjYZcDx3sErV02QiwiJIdrlC8gz1Yes8rV0-j25QOEF](https://user-images.githubusercontent.com/97561730/149031188-e229f522-aeda-4750-a32c-72baa81dceb6.jpg)
 Fig 1. Correlation between vaccination and case counts for Alameda county for the age group 0-17
 
