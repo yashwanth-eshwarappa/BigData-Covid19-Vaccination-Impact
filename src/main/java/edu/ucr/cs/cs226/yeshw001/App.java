@@ -140,9 +140,6 @@ public class App
             distinctCounties.add(r.getString(0));
         }
 
-        //Set<String> distinctCountiesDummy=new HashSet<>();
-        //distinctCountiesDummy.add("RIVERSIDE");
-
         //Vaccine efficacy across various age based cohorts
 
         for(String county:distinctCounties)
@@ -317,21 +314,13 @@ public class App
             ll1.add((double) r.getLong(0));
         }
 
-        //System.out.println("CalcCoeff DFList1: "+ l1.size());
-        //System.out.println("CalcCoeff DFList1updated: "+ ll1.size());
-
         List<Double> ll2=new ArrayList<>();
         for(Row r:l2) {
             ll2.add(Double.parseDouble(r.getString(0)));
         }
-        //System.out.println("CalcCoeff DFList2: "+ l2.size());
-        //System.out.println("CalcCoeff DFList2updated"+ ll2.size());
 
         double[] ld1 =ll1.stream().mapToDouble(Double::doubleValue).toArray();
         double[] ld2 =ll2.stream().mapToDouble(Double::doubleValue).toArray();
-
-        //System.out.println("CalcCoeff DFList1 before cumulative sum"+ ld1.length);
-        //System.out.println("CalcCoeff DFList2 before cumulative sum"+ ld2.length);
 
         for(int i=1;i<ld1.length;i++)
         {
@@ -345,10 +334,3 @@ public class App
         System.out.println("Spearman Correlation coefficient: "+ spearman);
     }
 }
-// TODO
-// Describe Chart
-// spark-submit build with dependencies and fix it
-// command line arguments for files
-// Correlation Co-Efficient in Report
-// Code Refactor
-// Replace distinctCountiesDummy with distinctCounties before submitting
